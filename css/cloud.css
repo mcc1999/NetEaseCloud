@@ -1,0 +1,180 @@
+html, body{
+    height: 100%;
+}
+/*html::-webkit-scrollbar { width: 0 !important }*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+/*-------------------header-----------------*/
+header{
+    height: 0.89rem;
+    background: #ca4b3e;
+}
+header .head{
+    height: 0.89rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .add i{
+    font-size: 0.45rem;
+    color: #ffffff;
+}
+header .title{
+    line-height: 0.89rem;
+    font-size: 0.3rem;
+    color: #ffffff;
+    border-bottom: 0.04rem solid #ffffff;
+}
+header .song a img{
+    width: 0.50rem;
+    height: 0.50rem;
+    border: 0.03rem solid #ce675c;
+    border-radius: 50%;
+}
+/*------------------content----------------*/
+section {
+    background: #f8f8f8;
+    flex: 1;
+    overflow-y: auto;
+}
+section::-webkit-scrollbar{width: 0; !important;}
+/*----picShare----*/
+section .picShare{
+    background: #f7f7f7;
+    overflow-y: auto;
+}
+section .picShare ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+section .picShare li{
+    width: 3.38rem;
+    margin-top: 0.15rem;
+    border-radius: 0.12rem;
+    background: #ffffff;
+}
+section .picShare img{
+    border-top-left-radius: 0.12rem;
+    border-top-right-radius: 0.12rem;
+    width: 3.38rem;
+    height: 5.4rem;
+ }
+section .picShare .picTitle{
+    font-size: 0.27rem;
+    font-weight: bold;
+    color: #000000;
+    padding-top: 0.23rem;
+    padding-bottom: 0.23rem;
+}
+section .picShare .comment{
+    height: 0.26rem;
+    margin-bottom: 0.28rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0.19rem;
+}
+section .picShare .comment img{
+    width: 0.26rem;
+    height: 0.26rem;
+    border-radius: 100%;
+}
+section .picShare .comment .author{
+    width:1.6rem;
+    margin-left: 0.07rem;
+}
+section .picShare .comment .like{
+    font-size: 0.1rem;
+}
+section .picShare .comment i{
+    font-size: 0.3rem;
+    margin-left: 0.25rem;
+    color: #474747;
+    padding-top: 0.07rem;
+}
+/*-------------picPost--------------*/
+section .picPost{
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 100%;
+    position: fixed;
+    top: 11.25rem;
+    left: 0.55rem;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .picPost a{
+    /*border: 5px dashed;*/
+    border-top: 5px solid #f2d265;
+    border-right: 5px solid #ca2b29;
+    border-left: 5px solid #4ba6e0;
+    border-bottom: 5px solid #22ff11;
+    border-radius: 100%;
+}
+section .picPost button{
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 100%;
+    border: none;
+}
+section .picPost button span{
+    font-size: 0.38rem;
+    /*text-align: center;*/
+    color: #464646;
+}
+/*-------------------foot------------------*/
+footer .foot{
+    border-top: 0.01rem solid #f5f5f5;
+    border-bottom: 0.01rem solid #f5f5f5;
+    background: #e9e9e9;
+    height: 0.92rem;
+}
+footer .foot ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer .foot ul li{
+    margin-top: 0.16rem;
+    color: #787878;
+}
+footer .foot ul li a{
+    margin-bottom: 0.12rem;
+}
+footer .foot ul li a i{
+    font-size: 0.37rem;
+}
+footer .foot ul li span{
+    display: block;
+    font-size: 0.17rem;
+
+}
+footer .foot ul li.show{
+    margin-top: 0.08rem;
+}
+footer .foot ul li.show a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0.53rem;
+    height: 0.53rem;
+    border-radius: 50%;
+    background: #e55c4b;
+    margin-bottom: 0.02rem;
+}
+footer .foot ul li.show a i{
+    color: #fefcfc;
+    font-size: 0.3rem;
+    border-radius: 50%;
+    margin-top: 0.02rem;
+}
+footer .foot ul li.show span{
+    color: #d45243;
+    text-align: center;
+}

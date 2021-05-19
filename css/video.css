@@ -1,0 +1,88 @@
+/*---------------navbar--------------*/
+section .navbar{
+    overflow-x: auto;
+    background: #cb4d3f;
+}
+section .navbar::-webkit-scrollbar{width: 0;height: 0; !important;}
+section .navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 17.1rem;
+    height: 0.75rem;
+    margin-left: 0.35rem;
+}
+section .navbar ul li span{
+    padding-left: 0.13rem;
+    padding-right: 0.13rem;
+    font-size: 0.25rem;
+    color: #ffffff;
+}
+section .navbar ul li{
+    height: 0.67rem;
+    display: flex;
+    align-items: center;
+    margin-right: 0.45rem;
+}
+section .navbar ul li:last-child{
+    margin-right: 0;
+}
+section .navbar ul .show{
+    border-bottom: 4px solid #ffffff;
+    border-top: 4px solid #cb4d3f;
+}
+/*-------------------video-------------------*/
+section .videos{
+    background: #fefefe;
+}
+section .videos li{
+    border-bottom: 0.15rem solid #f8f8f8;
+}
+section .videos li:last-child{
+    margin-bottom: 0;
+}
+section .videos video{
+    width: 6.92rem;
+    height: 3.9rem;
+    border: 1px solid #fbfcfb;
+    border-radius: 0.12rem;
+    margin-top: 0.27rem;
+}
+section .videos video::-webkit-media-controls-mute-button{display: none;}
+section .videos .videoTitle{
+    font-size: 0.27rem;
+    height: 1.08rem;
+    border-bottom: 2px solid #f5f5f5;
+    line-height: 1.08rem;
+    color: #000000;
+    font-weight: bold;
+}
+section .videos .comment{
+    height: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+section .videos .comment img{
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 100%;
+}
+section .videos .comment .author{
+    width:3.4rem;
+    margin-left: 0.09rem;
+    font-size: 0.23rem;
+}
+section .videos .comment i sup{
+    font-size: 0.01rem;
+}
+section .videos .comment i{
+    line-height: 0.9rem;
+    font-size: 0.3rem;
+    margin-left: 0.95rem;
+    color: #474747;
+}
+section .videos .comment i:first-child{
+    margin-left: 0;
+}

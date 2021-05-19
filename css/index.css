@@ -1,0 +1,232 @@
+/*----------------轮播图---------------*/
+section .pics{
+    margin-top: 0.12rem;
+    position: relative;
+    height: 2.7rem;
+}
+section .pics .imgList li{
+    position: absolute;
+}
+section .pics .imgList li img{
+    position: absolute;
+    width: 6.92rem;
+    height: 2.7rem;
+    border-radius: 0.12rem;
+    opacity: 1;
+    transition: all 1s;
+}
+section .pics .imgList .show{
+    z-index: 100;
+}
+section .pics .pointList{
+    position: absolute;
+    top: 2.48rem;
+    /*left: 2.59rem;*/
+    left: 50%;
+    margin-left: -1.015rem;
+    width: 2.03rem;
+    z-index: 100;
+}
+section .pics .pointList .point {
+    width: 0.14rem;
+    height: 0.14rem;
+    border-radius: 100%;
+    background: #ffffff;
+    /*opacity: 0.8;*/
+    float: left;
+    margin-right: 0.07rem;
+    z-index: 100;
+}
+section .pics .pointList .point:last-child{
+    margin-right: 0;
+}
+section .pics .pointList .show {
+    z-index: 100;
+    background: #bd3534;
+}
+/*-------------------导航栏-------------------*/
+section .navbar{
+    margin-top: 0.28rem;
+    overflow-x: auto;
+}
+section .navbar::-webkit-scrollbar{width: 0; !important;}
+section .navbar ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: 1.3rem;
+    width: 13.8rem;
+}
+section .navbar ul li{
+    width: 0.94rem;
+    height: 1.3rem;
+}
+section .navbar ul li .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0.85rem;
+    height: 0.85rem;
+    background: #d25041;
+    border-radius: 100%;
+    text-align: center;
+}
+section .navbar ul li .icon i{
+    font-size: 0.43rem;
+    color: #fefefe;
+}
+section .navbar ul li span{
+    margin-top: 0.17rem;
+    display: block;
+    font-size: 0.22rem;
+}
+/*-------------------精选歌单-----------------*/
+section .playlist{
+    margin-top: 0.4rem;
+}
+section .playlist .playListTitle{
+    position: relative;
+}
+section .playlist .listTitle{
+    font-size: 0.31rem;
+    font-weight: bold;
+}
+section .playlist .forMore{
+    font-size: 0.22rem;
+    border:1px solid #e0e0e0;
+    border-radius: 0.24rem;
+    padding: 0.1rem 0.2rem;
+    position: absolute;
+    right: 0;
+}
+section .playlist .ulst{
+    overflow-x: auto;
+    /*height: 2.85rem;*/
+}
+section .playlist .ulst::-webkit-scrollbar { width: 0 !important }
+section .playlist ul{
+    margin-top: 0.3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 14.865rem;
+    height: 2.85rem;
+}
+section .playlist ul li{
+    position: relative;
+    width: 2.13rem;
+    height: 2.85rem;
+}
+section .playlist ul li img{
+    border-radius: 0.1rem;
+    width: 2.13rem;
+    height: 2.13rem;
+    margin-bottom: 0.15rem;
+}
+section .playlist ul li div{
+    position: absolute;
+    right: 0.13rem;
+    top: 0.09rem;
+}
+section .playlist ul li div i{
+    color: #ffffff;
+    font-size: 0.25rem;
+    margin-right: 0;
+}
+section .playlist ul li div span{
+    color: #ffffff;
+    font-size: 0.17rem;
+}
+section .playlist ul li span{
+    color: #000000;
+    font-size: 0.22rem;
+    letter-spacing: 0.02rem;
+}
+section .playlist ul .moreList{
+    width: 1.065rem;
+    height: 2.13rem;
+    border-top-left-radius: 0.1rem;
+    border-bottom-left-radius: 0.1rem;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section .playlist ul .moreList span{
+    margin-top: 0;
+    color: #c6c6c6;
+}
+/*-----------------推荐歌曲----------------*/
+section .songRecommend{
+    margin-top: 0.5rem;
+}
+section .songRecommend .songRecommendTitle{
+    position: relative;
+}
+section .songRecommend .listTitle{
+    font-size: 0.31rem;
+    font-weight: bold;
+}
+section .songRecommend .forMore{
+    font-size: 0.22rem;
+    border:1px solid #e0e0e0;
+    border-radius: 0.24rem;
+    padding: 0.1rem 0.2rem;
+    position: absolute;
+    right: 0;
+}
+section .songRecommend .songList{
+    overflow-x: auto;
+}
+section .songRecommend .songList::-webkit-scrollbar{width: 0; !important;}
+section .songRecommend .ulRow{
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 20.36rem ;
+}
+section .songRecommend .ulRow .ulCol li img{
+    width: 1.1rem;
+    height: 1.1rem;
+    border-radius: 0.09rem;
+    float: left;
+}
+section .songRecommend .ulRow .ulCol li .songInfo{
+    float: left;
+}
+section .songRecommend .ulRow .ulCol li .songInfo .songName{
+    font-size: 0.27rem;
+    margin-left: 0.19rem;
+    margin-top: 0.21rem;
+}
+section .songRecommend .ulRow .ulCol li .songInfo .singer{
+    font-size: 0.22rem;
+    margin-left: 0.1rem;
+}
+section .songRecommend .ulRow .ulCol li .songInfo .songDescribe{
+    display: block;
+    font-size: 0.22rem;
+    margin-left: 0.19rem;
+}
+section .songRecommend .ulRow .ulCol li{
+    width: 6.52rem;
+    height: 1.1rem;
+    margin-bottom: 0.17rem;
+}
+section .songRecommend .ulRow .ulCol li:last-child{
+    margin-bottom: 0;
+}
+section .songRecommend .ulRow .ulCol li .btn{
+    position: relative;
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+section .songRecommend .ulRow .ulCol li .btn i{
+    position: absolute;
+    right: 0;
+    top: 0.3rem;
+    font-size: 0.45rem;
+
+}
